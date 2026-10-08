@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Lumi Glide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="game">
+<canvas id="gameCanvas"></canvas>
+<button id="soundBtn" aria-label="sound">🔊</button>
+<div id="topUI"><div id="score">0</div><div id="best">BEST: 0</div></div>
+<div id="runStars">⭐ 0</div>
+<div id="startScreen" class="screen">
+<div class="logo">LUMI</div><div class="logo driftText">GLIDE</div>
+<p>GIỮ để bay lên · THẢ để rơi<br>Nhặt ⭐ · né gai · tìm 🛡️ 🌈 🧲</p>
+<button id="startButton">PLAY</button>
+<div id="wallet">⭐ 0</div>
+<div id="skins"></div>
+<div id="skinMsg"></div>
+</div>
+<div id="gameOverScreen" class="screen hidden">
+<div class="gameOverTitle">ÔI, ĐAU QUÁ!</div>
+<div class="resultBox">
+<div><span>ĐIỂM</span><strong id="finalScore">0</strong></div>
+<div><span>KỶ LỤC</span><strong id="finalBest">0</strong></div>
+<div><span>SAO</span><strong id="finalStars">0</strong></div>
+</div>
+<button id="reviveBtn" class="hidden">▶ HỒI SINH (xem quảng cáo)</button>
+<button id="restartButton">CHƠI LẠI</button>
+<button id="menuBtn">🎨 ĐỔI NHÂN VẬT</button>
+</div>
+</div>
+<script src="https://game-cdn.poki.com/scripts/v2/poki-sdk.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
